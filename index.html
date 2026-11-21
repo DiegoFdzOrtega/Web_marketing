@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ari | Marketing digital, contenido y redes sociales</title>
 <meta name="description" content="Ari: marketing digital, estrategia de contenidos, redes sociales, vídeo y branding. Portfolio con recaps de eventos, entrevistas, street marketing, storytelling y producto.">
-<meta name="theme-color" content="#FFF8F3">
+<meta name="theme-color" content="#120A0E">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Ari | Marketing digital, contenido y redes sociales">
 <meta property="og:description" content="Estrategia, contenido audiovisual y redes sociales para marcas. Portfolio de vídeos.">
@@ -20,8 +20,8 @@
   (function () {
     var d = document.documentElement, t = null;
     d.classList.add('js');
-    try { t = localStorage.getItem('tema-ari-blanco'); } catch (e) {}
-    if (t !== 'dark') { t = 'light'; }  /* versión blanca: claro por defecto */
+    try { t = localStorage.getItem('tema-ari-v2'); } catch (e) {}
+    if (t !== 'light') { t = 'dark'; }  /* oscuro por defecto, aunque el sistema esté en modo claro */
     d.setAttribute('data-theme', t);
   })();
 </script>
@@ -874,7 +874,7 @@ var VIDEOS = [
   $("#theme").addEventListener("click", function () {
     var d = document.documentElement, t = d.getAttribute("data-theme") === "dark" ? "light" : "dark";
     d.setAttribute("data-theme", t);
-    try { localStorage.setItem("tema-ari-blanco", t); } catch (e) {}
+    try { localStorage.setItem("tema-ari-v2", t); } catch (e) {}
   });
 
   /* ---------- Menú móvil ---------- */

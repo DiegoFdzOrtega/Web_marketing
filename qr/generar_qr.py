@@ -11,7 +11,7 @@ el codificador (modo byte, corrección de errores nivel Q) está aquí mismo.
 import os
 import sys
 
-URL_POR_DEFECTO = "https://diegofdzortega.github.io/Web_Ari/"
+URL_POR_DEFECTO = "https://diegofdzortega.github.io/Web_marketing/"
 
 # Tablas del estándar QR (índice = versión). Orden de niveles: L, M, Q, H
 ECC_POR_BLOQUE = [
